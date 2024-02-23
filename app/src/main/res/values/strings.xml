@@ -2,4 +2,9 @@
     <string name="app_name">Assginment</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="my_meals">My Meals</string>
+    <string name="nearby">Nearby</string>
+    <string name="profile">Profile</string>
+    <string name="search_for_meals_chefs_and_more">Search for meals, chefs and more</string>
 </resources>

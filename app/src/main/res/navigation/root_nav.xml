@@ -19,4 +19,19 @@
         android:name="com.example.assginment.ui.lunch.LunchFragment"
         android:label="fragment_lunch"
         tools:layout="@layout/fragment_lunch" />
+    <fragment
+        android:id="@+id/myMealsFragment"
+        android:name="com.example.assginment.ui.mymeals.MyMealsFragment"
+        android:label="fragment_my_meals"
+        tools:layout="@layout/fragment_my_meals" />
+    <fragment
+        android:id="@+id/nearbyFragment"
+        android:name="com.example.assginment.ui.nearby.NearbyFragment"
+        android:label="fragment_nearby"
+        tools:layout="@layout/fragment_nearby" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.assginment.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
