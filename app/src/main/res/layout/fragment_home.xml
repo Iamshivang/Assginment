@@ -17,4 +17,14 @@
         app:layout_constraintTop_toTopOf="parent"
         android:visibility="visible" />
 
+    <include
+        android:id="@+id/rv_filter"
+        layout="@layout/rv_filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i_actionbar"
+        android:visibility="visible" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
