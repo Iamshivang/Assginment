@@ -7,4 +7,6 @@
     <string name="nearby">Nearby</string>
     <string name="profile">Profile</string>
     <string name="search_for_meals_chefs_and_more">Search for meals, chefs and more</string>
+    <string name="hello_john">Hello, John!</string>
+    <string name="work">Work</string>
 </resources>
