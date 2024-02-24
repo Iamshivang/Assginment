@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="8dp"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/resturants_item_bg"
+    android:elevation="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center_horizontal"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_restaurant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start|top"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Arunag Mess"
+                android:textColor="@color/text_color"
+                android:layout_alignParentStart="true"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_front_arrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/arrow_forward_icon"
+                android:visibility="visible"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="center|start"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rl1">
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start|top"
+                android:fontFamily="@font/poppins"
+                android:text="4.2"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_rating"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/star_icon"
+                android:visibility="visible"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start|top"
+                android:fontFamily="@font/poppins"
+                android:text="19 min"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start|top"
+                android:fontFamily="@font/poppins_bold"
+                android:text="|"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start|top"
+                android:fontFamily="@font/poppins"
+                android:text="1.2 km"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:gravity="top|start"
+            android:paddingTop="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll2">
+
+            <TextView
+                android:id="@+id/tv_start_from"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start|top"
+                android:fontFamily="@font/poppins"
+                android:text="@string/starts_from_rs"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_rupees"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start|top"
+                android:fontFamily="@font/poppins"
+                android:text="99"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_only"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start|top"
+                android:fontFamily="@font/poppins"
+                android:text="@string/only"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_restaurants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        tools:listitem="@layout/resturant_menu_item"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        tools:visibility="visible"
+        android:paddingBottom="16dp"
+        android:paddingTop="8dp"
+        android:paddingStart="4dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_description"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

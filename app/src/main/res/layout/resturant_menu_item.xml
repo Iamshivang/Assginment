@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="292dp"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/resturants_item_bg"
+    android:elevation="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/fl_veg_or_non_veg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_veg"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/veg_icon"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/iv_non_veg"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/non_veg_icon"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_menu_item"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:orientation="horizontal"
+            android:gravity="top|start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fl_veg_or_non_veg">
+
+            <TextView
+                android:id="@+id/tv_menu_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_horizontal"
+                android:gravity="start|top"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Chole Bhature"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_food_content"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:paddingTop="4dp"
+            android:gravity="center_horizontal|start"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_menu_item">
+
+            <TextView
+                android:id="@+id/tv_food_contents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start|top"
+                android:fontFamily="@font/poppins"
+                android:text="Chole + 2 Bhatug + Salad"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/text_light"
+                android:textSize="12sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_price"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:gravity="center_horizontal|start"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_food_content">
+
+            <TextView
+                android:id="@+id/tv_start_from"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start|top"
+                android:fontFamily="@font/poppins"
+                android:text="Rs 99"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_rating"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:gravity="center_horizontal|start"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_price">
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start|top"
+                android:fontFamily="@font/poppins"
+                android:text="4.5"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_rating"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/star_icon"
+                android:visibility="visible"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start|top"
+                android:fontFamily="@font/poppins"
+                android:text="(564)"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/text_light"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fl_food_image"
+            android:layout_width="80dp"
+            android:layout_height="99dp"
+            android:paddingBottom="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_food_menu_item"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/food2"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:shapeAppearance="@style/imageViewRounded"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add_menu_item"
+                android:layout_width="72dp"
+                android:layout_height="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/add"
+                android:textAllCaps="false"
+                android:textColor="@color/primary"
+                android:background="@drawable/add_btn_bg"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:elevation="5dp"
+                android:textSize="16dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
