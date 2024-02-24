@@ -9,4 +9,13 @@
     <string name="search_for_meals_chefs_and_more">Search for meals, chefs and more</string>
     <string name="hello_john">Hello, John!</string>
     <string name="work">Work</string>
+    <string name="biryani">Biryani</string>
+    <string name="dinner">Dinner</string>
+    <string name="arriving_8_30_pm">Arriving : 8:30 pm</string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="my_next_meal">MY NEXT MEAL</string>
+    <string name="subscriptions">SUBSCRIPTIONS</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="popular_meals">POPULAR MEALS</string>
 </resources>

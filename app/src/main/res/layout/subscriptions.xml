@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/cl_subscriptions"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/line1"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@color/search_bar"/>
+
+        <TextView
+            android:id="@+id/tv_subscriptions"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins"
+            android:text="@string/subscriptions"
+            android:textColor="@color/text_color"
+            android:textSize="14dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/line2"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/search_bar"/>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal"
+            android:gravity="top"
+            app:layout_constraintTop_toBottomOf="@+id/cl_subscriptions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ll_subs_breakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="124dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_subs_breakfast"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/food4"
+                        android:scaleType="fitXY"
+                        android:visibility="visible"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_subs_breakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="19dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/breakfast"
+                    android:textColor="@color/text_color"
+                    android:textSize="16dp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ll_subs_lunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="124dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_subs_lunch"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/food2"
+                        android:scaleType="fitXY"
+                        android:visibility="visible"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_subs_lunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="19dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/lunch"
+                    android:textColor="@color/text_color"
+                    android:textSize="16dp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ll_subs_dinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="124dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_subs_dinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/food3"
+                        android:scaleType="fitXY"
+                        android:visibility="visible"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_subs_dinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="19dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/breakfast"
+                    android:textColor="@color/text_color"
+                    android:textSize="16dp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

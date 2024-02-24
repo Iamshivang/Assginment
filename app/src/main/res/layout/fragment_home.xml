@@ -27,4 +27,26 @@
         app:layout_constraintTop_toBottomOf="@+id/i_actionbar"
         android:visibility="visible" />
 
+    <include
+        android:id="@+id/i_my_next_meal"
+        layout="@layout/my_next_meal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_filter"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/i_subscriptions"
+        layout="@layout/subscriptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i_my_next_meal"
+        android:visibility="visible" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
