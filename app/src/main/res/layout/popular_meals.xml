@@ -62,7 +62,7 @@
         android:paddingStart="1dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        tools:listitem="@layout/filters_item"
+        tools:listitem="@layout/popular_meals_item"
         android:orientation="horizontal"
         android:visibility="visible"
         tools:visibility="visible"

@@ -47,6 +47,16 @@
         app:layout_constraintTop_toBottomOf="@+id/i_my_next_meal"
         android:visibility="visible" />
 
+    <include
+        android:id="@+id/i_popular_meals"
+        layout="@layout/popular_meals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i_subscriptions"
+        android:visibility="visible" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
