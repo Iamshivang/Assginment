@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Assginment" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:statusBarColor">@color/primary</item>
     </style>
 
     <style name="Theme.Assginment" parent="Base.Theme.Assginment" />

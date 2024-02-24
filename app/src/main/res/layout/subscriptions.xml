@@ -63,6 +63,7 @@
             app:layout_constraintBottom_toBottomOf="parent">
 
             <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llc_breakfast"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -103,6 +104,7 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llc_lunch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -144,6 +146,7 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llc_dinner"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -176,7 +179,7 @@
                     android:layout_height="19dp"
                     android:gravity="center"
                     android:fontFamily="@font/poppins"
-                    android:text="@string/breakfast"
+                    android:text="@string/dinner"
                     android:textColor="@color/text_color"
                     android:textSize="16dp" />
 

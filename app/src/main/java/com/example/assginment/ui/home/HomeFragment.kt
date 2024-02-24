@@ -7,12 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.view.isVisible
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.assginment.R
 import com.example.assginment.adapters.FiltersAdapter
+import com.example.assginment.adapters.OffersAdapter
 import com.example.assginment.adapters.PopularMealsAdapter
 import com.example.assginment.databinding.FragmentHomeBinding
 import com.example.assginment.models.Filter
+import com.example.assginment.models.Offers
 import com.example.assginment.models.PopularMeal
 import com.example.assginment.utils.Constants
 
@@ -22,10 +26,11 @@ class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
     private lateinit var popularMealsAdapter: PopularMealsAdapter
-    lateinit var rvPopularMeals: RecyclerView
+    private lateinit var rvPopularMeals: RecyclerView
     private lateinit var filtersAdapter: FiltersAdapter
     lateinit var rvfilters: RecyclerView
-//    private lateinit var popularMealsAdapter: PopularMealsAdapter
+    private lateinit var offersAdapter: OffersAdapter
+    private lateinit var rvOffers: RecyclerView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,10 +43,31 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setUpViews()
+        setUpFiltersRV()
+        setUpPopularMealsRV()
+        setUPOffers()
+    }
+
+    private fun setUpViews(){
+
         rvfilters= binding.iFilter.rvFilters
         rvPopularMeals= binding.iPopularMeals.rvPopularMeals
-        setUpFiltersRV()
-        setUpPopulalMealsRV()
+        rvOffers= binding.iOffersJustForYou.rvOffersJustForYou
+
+        binding.iSubscriptions.llcLunch.setOnClickListener{
+
+            findNavController().navigate(R.id.action_homeFragment_to_lunchFragment)
+        }
+
+        binding.iSubscriptions.llcBreakfast.setOnClickListener {
+            Toast.makeText(requireContext(), getText(R.string.breakfast), Toast.LENGTH_LONG).show()
+        }
+
+        binding.iSubscriptions.llcDinner.setOnClickListener {
+            Toast.makeText(requireContext(), getText(R.string.dinner), Toast.LENGTH_LONG).show()
+        }
+
     }
 
     private fun setUpFiltersRV(){
@@ -63,7 +89,7 @@ class HomeFragment : Fragment() {
         })
     }
 
-    private fun setUpPopulalMealsRV(){
+    private fun setUpPopularMealsRV(){
 
         popularMealsAdapter= PopularMealsAdapter(Constants.popualMeals.getList())
         rvPopularMeals.isVisible= true
@@ -76,6 +102,24 @@ class HomeFragment : Fragment() {
         popularMealsAdapter.setOnClickListener(object : PopularMealsAdapter.OnClickListener{
             override fun onCLick(position: Int, model: PopularMeal) {
                 Toast.makeText(requireContext(), model.name, Toast.LENGTH_LONG).show()
+            }
+
+        })
+    }
+
+    private fun setUPOffers(){
+
+        offersAdapter= OffersAdapter(Constants.offers.getList())
+        rvOffers.isVisible= true
+
+        rvOffers.apply {
+            layoutManager = LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
+            adapter = offersAdapter
+        }
+
+        offersAdapter.setOnClickListener(object : OffersAdapter.OnClickListener{
+            override fun onCLick(position: Int, model: Offers) {
+                Toast.makeText(requireContext(), model.images.toString(), Toast.LENGTH_LONG).show()
             }
 
         })
