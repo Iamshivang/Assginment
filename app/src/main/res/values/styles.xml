@@ -12,4 +12,9 @@
         <item name="itemIconTint">@color/primary</item> <!-- Active icon color -->
     </style>
 
+    <style name="imageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
 </resources>

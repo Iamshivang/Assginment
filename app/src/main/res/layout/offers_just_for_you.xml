@@ -8,10 +8,10 @@
     android:paddingStart="16dp">
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/cl_popular_meals"
+        android:id="@+id/cl_offers_just_for_you"
         android:layout_width="match_parent"
         android:layout_height="19dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="8dp"
         android:paddingEnd="16dp"
         android:orientation="horizontal"
         android:gravity="center_horizontal"
@@ -28,14 +28,14 @@
             android:background="@color/search_bar"/>
 
         <TextView
-            android:id="@+id/tv_popular_meals"
+            android:id="@+id/tv_offers_just_for_you"
             android:layout_width="wrap_content"
             android:layout_height="19dp"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="10dp"
             android:gravity="center"
             android:fontFamily="@font/poppins"
-            android:text="@string/popular_meals"
+            android:text="@string/offers_just_for_you"
             android:textColor="@color/text_color"
             android:textSize="14dp"/>
 
@@ -53,21 +53,19 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_popular_meals"
+        android:id="@+id/rv_offers_just_for_you"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         xmlns:tools="http://schemas.android.com/tools"
         android:clipToPadding="false"
         android:nestedScrollingEnabled="false"
         android:paddingStart="1dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        tools:listitem="@layout/popular_meals_item"
+        tools:listitem="@layout/offers_just_for_you_item"
         android:orientation="horizontal"
         android:visibility="visible"
         tools:visibility="visible"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintTop_toBottomOf="@+id/cl_popular_meals"
+        app:layout_constraintTop_toBottomOf="@+id/cl_offers_just_for_you"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
