@@ -3,12 +3,11 @@ package com.example.assginment.adapters
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.graphics.drawable.toDrawable
 import androidx.recyclerview.widget.RecyclerView
 import com.example.assginment.databinding.PopularMealsItemBinding
 import com.example.assginment.models.PopularMeal
 
-class PopularMealsAdapter(private val context: Context, private val items: List<PopularMeal>): RecyclerView.Adapter<PopularMealsAdapter.ViewHolder>() {
+class PopularMealsAdapter(private val items: List<PopularMeal>): RecyclerView.Adapter<PopularMealsAdapter.ViewHolder>() {
 
     private var onClickListener: OnClickListener?= null
 

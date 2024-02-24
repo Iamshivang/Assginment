@@ -6,12 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.example.assginment.R
+import com.example.assginment.adapters.FiltersAdapter
 import com.example.assginment.adapters.PopularMealsAdapter
 import com.example.assginment.databinding.FragmentHomeBinding
+import com.example.assginment.models.Filter
 import com.example.assginment.models.PopularMeal
 import com.example.assginment.utils.Constants
 
@@ -22,6 +23,8 @@ class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
     private lateinit var popularMealsAdapter: PopularMealsAdapter
     lateinit var rvPopularMeals: RecyclerView
+    private lateinit var filtersAdapter: FiltersAdapter
+    lateinit var rvfilters: RecyclerView
 //    private lateinit var popularMealsAdapter: PopularMealsAdapter
 
     override fun onCreateView(
@@ -35,13 +38,35 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        rvfilters= binding.iFilter.rvFilters
+        rvPopularMeals= binding.iPopularMeals.rvPopularMeals
+        setUpFiltersRV()
         setUpPopulalMealsRV()
+    }
+
+    private fun setUpFiltersRV(){
+
+        filtersAdapter= FiltersAdapter(Constants.filters.getList())
+        rvPopularMeals.isVisible= true
+
+        rvfilters.apply {
+            layoutManager = LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
+            adapter = filtersAdapter
+        }
+
+        filtersAdapter.setOnClickListener(object : FiltersAdapter.OnClickListener{
+            override fun onCLick(position: Int, model: Filter) {
+                Toast.makeText(requireContext(), model.name, Toast.LENGTH_LONG).show()
+                binding.iActionbar.etSearchBar.setText(model.name)
+            }
+
+        })
     }
 
     private fun setUpPopulalMealsRV(){
 
-        popularMealsAdapter= PopularMealsAdapter(requireContext(), Constants.popualMeals.getList())
-        rvPopularMeals= binding.iPopularMeals.rvPopularMeals
+        popularMealsAdapter= PopularMealsAdapter(Constants.popualMeals.getList())
+        rvPopularMeals.isVisible= true
 
         rvPopularMeals.apply {
             layoutManager = LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)

@@ -18,12 +18,23 @@
         app:layout_constraintBottom_toTopOf="@+id/bnv"
         app:navGraph="@navigation/root_nav"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/line1"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bnv"
+        android:background="@drawable/bottom_nav_gradient"/>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnv"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_gravity="bottom"
-        android:elevation="10dp"
+        android:elevation="6dp"
         android:visibility="visible"
         app:itemIconSize="24dp"
         app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"

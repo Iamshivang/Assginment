@@ -18,7 +18,7 @@
         android:visibility="visible" />
 
     <include
-        android:id="@+id/rv_filter"
+        android:id="@+id/i_filter"
         layout="@layout/rv_filters"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rv_filter"
+        app:layout_constraintTop_toBottomOf="@+id/i_filter"
         android:visibility="visible" />
 
     <include
