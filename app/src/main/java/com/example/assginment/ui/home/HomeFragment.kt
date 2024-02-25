@@ -28,7 +28,7 @@ class HomeFragment : Fragment() {
     private lateinit var popularMealsAdapter: PopularMealsAdapter
     private lateinit var rvPopularMeals: RecyclerView
     private lateinit var filtersAdapter: FiltersAdapter
-    lateinit var rvfilters: RecyclerView
+    private lateinit var rvfilters: RecyclerView
     private lateinit var offersAdapter: OffersAdapter
     private lateinit var rvOffers: RecyclerView
 
@@ -73,7 +73,7 @@ class HomeFragment : Fragment() {
     private fun setUpFiltersRV(){
 
         filtersAdapter= FiltersAdapter(Constants.filters.getList())
-        rvPopularMeals.isVisible= true
+        rvfilters.isVisible= true
 
         rvfilters.apply {
             layoutManager = LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
