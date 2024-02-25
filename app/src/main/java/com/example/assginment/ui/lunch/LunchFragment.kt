@@ -73,7 +73,7 @@ class LunchFragment : Fragment() {
 
     private fun setUpRestaurantsRV(){
 
-        restaurantsAdapter= RestaurantsAdapter(Constants.restaurant.getList())
+        restaurantsAdapter= RestaurantsAdapter(requireActivity(), Constants.restaurant.getList())
         rvRestaurants.isVisible= true
 
         rvRestaurants.apply {

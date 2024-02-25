@@ -6,7 +6,7 @@
     android:paddingEnd="16dp"
     android:paddingBottom="16dp"
     android:paddingTop="16dp"
-    android:layout_marginEnd="8dp"
+    android:layout_marginEnd="10dp"
     android:background="@drawable/resturants_item_bg"
     android:elevation="4dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -101,7 +101,7 @@
             app:layout_constraintTop_toBottomOf="@id/ll_food_content">
 
             <TextView
-                android:id="@+id/tv_start_from"
+                android:id="@+id/tv_price"
                 android:layout_width="wrap_content"
                 android:layout_height="14dp"
                 android:layout_gravity="center_horizontal"
@@ -149,7 +149,7 @@
                 android:layout_marginEnd="16dp"/>
 
             <TextView
-                android:id="@+id/tv_time"
+                android:id="@+id/tv_reviews"
                 android:layout_width="wrap_content"
                 android:layout_height="14dp"
                 android:layout_gravity="center_horizontal"

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginBottom="8dp"
+    android:layout_marginBottom="10dp"
     android:paddingStart="16dp"
     android:paddingTop="16dp"
     android:background="@drawable/resturants_item_bg"
@@ -174,8 +174,6 @@
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-
-
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="24dp"
@@ -193,7 +191,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_restaurants"
+        android:id="@+id/rv_menu_items"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clipToPadding="false"
@@ -207,6 +205,7 @@
         android:paddingStart="4dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cl_description"/>
 
