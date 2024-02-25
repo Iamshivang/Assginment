@@ -35,7 +35,7 @@
         android:nestedScrollingEnabled="false"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:paddingBottom="8dp"
+        android:paddingBottom="148dp"
         android:paddingTop="8dp"
         tools:listitem="@layout/resturants_item"
         android:orientation="vertical"

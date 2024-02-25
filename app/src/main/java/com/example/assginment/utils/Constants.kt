@@ -17,7 +17,7 @@ object Constants {
             val meal1 = PopularMeal("Veg Thali", R.drawable.food5)
             list.add(meal1)
 
-            val meal2 = PopularMeal("Chiken Thali", R.drawable.food6)
+            val meal2 = PopularMeal("Chiken", R.drawable.food6)
             list.add(meal2)
 
             val meal3 = PopularMeal("Nonveg", R.drawable.food7)
@@ -29,7 +29,7 @@ object Constants {
             val meal5 = PopularMeal("Polao", R.drawable.food4)
             list.add(meal5)
 
-            val meal6 = PopularMeal("Chole Bhature", R.drawable.food3)
+            val meal6 = PopularMeal("Chole", R.drawable.food3)
             list.add(meal6)
 
             val meal7 = PopularMeal("Chole Rice", R.drawable.food2)
@@ -95,28 +95,28 @@ object Constants {
         fun getList1(): ArrayList<MenuItem>{
 
             val list1= ArrayList<MenuItem>()
-            val item1= MenuItem("Veg Thali", "59", "4.3", "79", "Dal + 5 Roti + Salad", true, R.drawable.food1)
+            val item1= MenuItem("Veg Thali", "₹ 59", "4.3", "(79)", "Dal + 5 Roti + Salad", true, R.drawable.food1)
             list1.add(item1)
 
-            val item2= MenuItem("Non-Veg Thali", "95", "3.9", "97", "Gravy + 3 Nan + Salad", false, R.drawable.food2)
+            val item2= MenuItem("Non-Veg Thali", "₹ 95", "3.9", "(97)", "Gravy + 3 Nan + Salad", false, R.drawable.food2)
             list1.add(item2)
 
-            val item3= MenuItem("Chole Bhature", "50", "4.6", "78", "Chole + 2 Bhature + Pickel", true, R.drawable.food3)
+            val item3= MenuItem("Chole Bhature", "₹ 50", "4.6", "(78)", "Chole + 2 Bhature + Pickel", true, R.drawable.food3)
             list1.add(item3)
 
-            val item4= MenuItem("Biryani", "89", "4.5", "765", "Biyani Bowl+ Salad", false, R.drawable.food4)
+            val item4= MenuItem("Biryani", "₹ 89", "4.5", "(765)", "Biyani Bowl+ Salad", false, R.drawable.food4)
             list1.add(item4)
 
-            val item5= MenuItem("Dosa", "40", "4.7", "755", "Sambar + 1 Dosa + Chutney", true, R.drawable.food5)
+            val item5= MenuItem("Dosa", "₹ 40", "4.7", "(755)", "Sambar + 1 Dosa + Chutney", true, R.drawable.food5)
             list1.add(item5)
 
-            val item6= MenuItem("Dal Fry", "50", "4.1", "76", "Dal + 4 Roti + Salad", true, R.drawable.food6)
+            val item6= MenuItem("Dal Fry", "₹ 50", "4.1", "(76)", "Dal + 4 Roti + Salad", true, R.drawable.food6)
             list1.add(item6)
 
-            val item7= MenuItem("Chiken", "95", "3.8", "376", "2 Chiken piece+ 4 Nan", false, R.drawable.food7)
+            val item7= MenuItem("Chiken", "₹ 95", "3.8", "(376)", "2 Chiken piece+ 4 Nan", false, R.drawable.food7)
             list1.add(item7)
 
-            val item8= MenuItem("Paneer", "87", "4.4", "543", "Paneer + 2 Roti + Onion", true, R.drawable.food8)
+            val item8= MenuItem("Paneer", "₹ 87", "4.4", "(543)", "Paneer + 2 Roti + Onion", true, R.drawable.food8)
             list1.add(item8)
 
             return list1
@@ -126,28 +126,28 @@ object Constants {
 
             val list1= ArrayList<MenuItem>()
 
-            val item8= MenuItem("Paneer", "87", "4.4", "543", "Paneer + 2 Roti + Onion", true, R.drawable.food8)
+            val item8= MenuItem("Paneer", "₹ 87", "4.4", "(543)", "Paneer + 2 Roti + Onion", true, R.drawable.food8)
             list1.add(item8)
 
-            val item7= MenuItem("Chiken", "95", "3.8", "376", "2 Chiken piece+ 4 Nan", false, R.drawable.food7)
+            val item7= MenuItem("Chiken", "₹ 95", "3.8", "(376)", "2 Chiken piece+ 4 Nan", false, R.drawable.food7)
             list1.add(item7)
 
-            val item1= MenuItem("Veg Thali", "59", "4.3", "79", "Dal + 5 Roti + Salad", true, R.drawable.food1)
+            val item1= MenuItem("Veg Thali", "₹ 59", "4.3", "(79)", "Dal + 5 Roti + Salad", true, R.drawable.food1)
             list1.add(item1)
 
-            val item6= MenuItem("Dal Fry", "50", "4.1", "76", "Dal + 4 Roti + Salad", true, R.drawable.food6)
+            val item6= MenuItem("Dal Fry", "₹ 50", "4.1", "(76)", "Dal + 4 Roti + Salad", true, R.drawable.food6)
             list1.add(item6)
 
-            val item2= MenuItem("Non-Veg Thali", "95", "3.9", "97", "Gravy + 3 Nan + Salad", false, R.drawable.food2)
+            val item2= MenuItem("Non-Veg Thali", "₹ 95", "3.9", "(97)", "Gravy + 3 Nan + Salad", false, R.drawable.food2)
             list1.add(item2)
 
-            val item3= MenuItem("Chole Bhature", "50", "4.6", "78", "Chole + 2 Bhature + Pickel", true, R.drawable.food3)
+            val item3= MenuItem("Chole Bhature", "₹ 50", "4.6", "(78)", "Chole + 2 Bhature + Pickel", true, R.drawable.food3)
             list1.add(item3)
 
-            val item4= MenuItem("Biryani", "89", "4.5", "765", "Biyani Bowl+ Salad", false, R.drawable.food4)
+            val item4= MenuItem("Biryani", "₹ 89", "4.5", "(765)", "Biyani Bowl+ Salad", false, R.drawable.food4)
             list1.add(item4)
 
-            val item5= MenuItem("Dosa", "40", "4.7", "755", "Sambar + 1 Dosa + Chutney", true, R.drawable.food5)
+            val item5= MenuItem("Dosa", "₹ 40", "4.7", "(755)", "Sambar + 1 Dosa + Chutney", true, R.drawable.food5)
             list1.add(item5)
 
             return list1
@@ -157,28 +157,28 @@ object Constants {
 
             val list1= ArrayList<MenuItem>()
 
-            val item2= MenuItem("Non-Veg Thali", "95", "3.9", "97", "Gravy + 3 Nan + Salad", false, R.drawable.food2)
+            val item2= MenuItem("Non-Veg Thali", "₹ 95", "3.9", "(97)", "Gravy + 3 Nan + Salad", false, R.drawable.food2)
             list1.add(item2)
 
-            val item3= MenuItem("Chole Bhature", "50", "4.6", "78", "Chole + 2 Bhature + Pickel", true, R.drawable.food3)
+            val item3= MenuItem("Chole Bhature", "₹ 50", "4.6", "(78)", "Chole + 2 Bhature + Pickel", true, R.drawable.food3)
             list1.add(item3)
 
-            val item5= MenuItem("Dosa", "40", "4.7", "755", "Sambar + 1 Dosa + Chutney", true, R.drawable.food5)
+            val item5= MenuItem("Dosa", "₹ 40", "4.7", "(755)", "Sambar + 1 Dosa + Chutney", true, R.drawable.food5)
             list1.add(item5)
 
-            val item8= MenuItem("Paneer", "87", "4.4", "543", "Paneer + 2 Roti + Onion", true, R.drawable.food8)
+            val item8= MenuItem("Paneer", "₹ 87", "4.4", "(543)", "Paneer + 2 Roti + Onion", true, R.drawable.food8)
             list1.add(item8)
 
-            val item7= MenuItem("Chiken", "95", "3.8", "376", "2 Chiken piece+ 4 Nan", false, R.drawable.food7)
+            val item7= MenuItem("Chiken", "₹ 95", "3.8", "(376)", "2 Chiken piece+ 4 Nan", false, R.drawable.food7)
             list1.add(item7)
 
-            val item1= MenuItem("Veg Thali", "59", "4.3", "79", "Dal + 5 Roti + Salad", true, R.drawable.food1)
+            val item1= MenuItem("Veg Thali", "₹ 59", "4.3", "(79)", "Dal + 5 Roti + Salad", true, R.drawable.food1)
             list1.add(item1)
 
-            val item6= MenuItem("Dal Fry", "50", "4.1", "76", "Dal + 4 Roti + Salad", true, R.drawable.food6)
+            val item6= MenuItem("Dal Fry", "₹ 50", "4.1", "(76)", "Dal + 4 Roti + Salad", true, R.drawable.food6)
             list1.add(item6)
 
-            val item4= MenuItem("Biryani", "89", "4.5", "765", "Biyani Bowl+ Salad", false, R.drawable.food4)
+            val item4= MenuItem("Biryani", "₹ 89", "4.5", "(765)", "Biyani Bowl+ Salad", false, R.drawable.food4)
             list1.add(item4)
 
             return list1
