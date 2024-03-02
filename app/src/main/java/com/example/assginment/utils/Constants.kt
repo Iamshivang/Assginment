@@ -6,8 +6,11 @@ import com.example.assginment.models.MenuItem
 import com.example.assginment.models.Offers
 import com.example.assginment.models.PopularMeal
 import com.example.assginment.models.Restaurant
+import io.bloco.faker.Faker
 
 object Constants {
+
+    val faker = Faker()
 
     object popualMeals{
 
@@ -183,6 +186,20 @@ object Constants {
 
             return list1
         }
+
+        fun getList4(): ArrayList<MenuItem>{
+
+            val list1= ArrayList<MenuItem>()
+
+            for (i in 1..10){
+
+                val item= MenuItem(faker.food.dish(), "₹ "+ faker.commerce.price(49, 178).toInt().toString(),
+                    faker.number.decimal(leftDigits = 1, rightDigits = 1).toString(), "("+ faker.number.between(91, 999).toString()+ ")", faker.food.ingredient(), faker.bool.bool(), R.drawable.food5)
+                list1.add(item)
+            }
+
+            return list1
+        }
     }
 
     object restaurant{
@@ -207,6 +224,9 @@ object Constants {
 
             val res6= Restaurant("Sindh Hotel", "4.7", "30 min", "3.1 km", "99", Constants.menuLists.getList3())
             list.add(res6)
+
+            val res7= Restaurant("Usha Hotel", "4.7", "30 min", "3.1 km", "99", Constants.menuLists.getList4())
+            list.add(res7)
 
             return list
         }

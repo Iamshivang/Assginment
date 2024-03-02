@@ -2,6 +2,7 @@ package com.example.assginment.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
@@ -22,7 +23,22 @@ class MainActivity : AppCompatActivity() {
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fcv) as NavHostFragment
         navController = navHostFragment.navController
-        bottomNav = binding.bnv
-        bottomNav.setupWithNavController(navController)
+
+        val gender= "male"
+
+        if(gender== "male"){
+
+            bottomNav = binding.bnv2
+            bottomNav.setupWithNavController(navController)
+            bottomNav.visibility= View.VISIBLE
+            binding.bnv.visibility= View.GONE
+
+        }else{
+
+            bottomNav = binding.bnv
+            bottomNav.setupWithNavController(navController)
+            bottomNav.visibility= View.VISIBLE
+            binding.bnv2.visibility= View.GONE
+        }
     }
 }

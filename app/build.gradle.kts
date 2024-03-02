@@ -59,4 +59,7 @@ dependencies {
 
     // CircleImageView
     implementation("de.hdodenhof:circleimageview:3.1.0")
+
+    // If you want to use in the APP itself besides testing
+    implementation("com.github.blocoio:faker:2.0.1")
 }
