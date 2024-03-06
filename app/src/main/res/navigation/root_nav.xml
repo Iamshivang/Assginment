@@ -25,13 +25,13 @@
         android:label="fragment_my_meals"
         tools:layout="@layout/fragment_my_meals" />
     <fragment
-        android:id="@+id/nearbyFragment"
-        android:name="com.example.assginment.ui.nearby.NearbyFragment"
-        android:label="fragment_nearby"
-        tools:layout="@layout/fragment_nearby" />
-    <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.assginment.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/quickGrabFragment"
+        android:name="com.example.assginment.ui.quickGrab.QuickGrabFragment"
+        android:label="fragment_quick_grab"
+        tools:layout="@layout/fragment_quick_grab" />
 </navigation>

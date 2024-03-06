@@ -3,10 +3,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#EE4266</color>
+    <color name="green">#10B981</color>
     <color name="text_light">#7D7C7C</color>
 
     <color name="primary">#FE724C</color>
     <color name="text_color">#2D2A2A</color>
     <color name="nav_icon_color">#333333</color>
     <color name="search_bar">#AFA9A7</color>
+    <color name="text_color_secondary_grey">#C7C8CC</color>
+
+    <color name="c1">#C9F1FA</color>
+    <color name="c2">#10B981</color>
+    <color name="c0">#474747</color>
 </resources>

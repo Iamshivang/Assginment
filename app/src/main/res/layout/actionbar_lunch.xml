@@ -78,6 +78,8 @@
         android:drawablePadding="15dp"
         android:transitionName="searchActivityTransition"
         android:textSize="14dp"
+        android:focusedByDefault="false"
+        android:focusable="false"
         android:textColor="@color/text_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

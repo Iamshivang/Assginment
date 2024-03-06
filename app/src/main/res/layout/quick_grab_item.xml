@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_quick_grab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/quick_grab_item_bg"
+        android:layout_margin="16dp"
+        android:padding="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_food_menu_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_food_menu_item"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/food2"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:shapeAppearance="@style/imageViewRounded_q_g"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <FrameLayout
+                android:id="@+id/left_overlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <include
+                    android:id="@+id/i_swipe_left_reaction"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    layout="@layout/swipe_left_reaction"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/right_overlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <include
+                    android:id="@+id/i_swipe_right_reaction"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    layout="@layout/swipe_right_reaction" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/top_overlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <include
+                    android:id="@+id/i_swipe_top_reaction"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    layout="@layout/swipe_up_reaction" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/bottom_overlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <include
+                    android:id="@+id/i_swipe_bottom_reaction"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    layout="@layout/swipe_down_reaction" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <FrameLayout
+                android:id="@+id/fl_veg_or_non_veg"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_veg"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/veg_icon"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/iv_non_veg"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/non_veg_icon"
+                    android:visibility="visible"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_menu_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="horizontal"
+                android:gravity="top|start"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fl_veg_or_non_veg">
+
+                <TextView
+                    android:id="@+id/tv_menu_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="top|start"
+                    android:gravity="start|top"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Chole Bhatureg"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_food_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:gravity="top|start"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ll_menu_item">
+
+                <TextView
+                    android:id="@+id/tv_food_contents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="start|top"
+                    android:fontFamily="@font/poppins"
+                    android:text="Chole + 2 Bhatug + Salad"
+                    android:textColor="@color/text_color_secondary_grey"
+                    android:textSize="14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:gravity="center_horizontal|start"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ll_food_content">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="start|top"
+                    android:fontFamily="@font/poppins"
+                    android:text="₹ 99"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|start"
+                android:paddingTop="4dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ll_price">
+
+                <TextView
+                    android:id="@+id/tv_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="start|top"
+                    android:layout_marginEnd="4dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="4.5"
+                    android:textColor="@color/text_color_secondary_grey"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_rating"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/star_icon"
+                    android:visibility="visible"
+                    android:layout_marginEnd="4dp"/>
+
+                <TextView
+                    android:id="@+id/tv_reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="start|top"
+                    android:fontFamily="@font/poppins"
+                    android:text="(564)"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/text_color_secondary_grey"
+                    android:textSize="14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

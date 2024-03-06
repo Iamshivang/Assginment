@@ -22,4 +22,8 @@
     <string name="starts_from_rs">Starts from Rs </string>
     <string name="only">only</string>
     <string name="add">Add</string>
+    <string name="quick_grab">Quick Grab</string>
+    <string name="skip_128078">SKIP 👎</string>
+    <string name="add_128077">ADD 👍</string>
+    <string name="want_healthy">WANT HEALTHY ?</string>
 </resources>

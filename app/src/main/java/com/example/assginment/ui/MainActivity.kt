@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         val gender= "male"
 
-        if(gender== "male"){
+        if(gender== "female"){
 
             bottomNav = binding.bnv2
             bottomNav.setupWithNavController(navController)

@@ -81,6 +81,8 @@
         android:gravity="start|center_vertical"
         android:hint="@string/search_for_meals_chefs_and_more"
         android:textAllCaps="false"
+        android:focusedByDefault="false"
+        android:focusable="false"
         android:textColorHint="@color/search_bar"
         android:drawablePadding="15dp"
         android:transitionName="searchActivityTransition"

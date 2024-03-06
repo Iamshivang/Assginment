@@ -17,4 +17,9 @@
         <item name="cornerSize">15%</item>
     </style>
 
+    <style name="imageViewRounded_q_g">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5%</item>
+    </style>
+
 </resources>

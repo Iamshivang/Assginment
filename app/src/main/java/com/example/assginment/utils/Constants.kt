@@ -5,6 +5,7 @@ import com.example.assginment.models.Filter
 import com.example.assginment.models.MenuItem
 import com.example.assginment.models.Offers
 import com.example.assginment.models.PopularMeal
+import com.example.assginment.models.QuickGrabItem
 import com.example.assginment.models.Restaurant
 import io.bloco.faker.Faker
 
@@ -229,6 +230,40 @@ object Constants {
             list.add(res7)
 
             return list
+        }
+    }
+
+    object QuickGrab{
+
+        fun getList1(): ArrayList<QuickGrabItem>{
+
+            val list1= ArrayList<QuickGrabItem>()
+
+            val item8= QuickGrabItem("Paneer", "₹ 87", "4.4", "(543)", "Paneer + 2 Roti + Onion", true, R.drawable.food8)
+            list1.add(item8)
+
+            val item7= QuickGrabItem("Chiken", "₹ 95", "3.8", "(376)", "2 Chiken piece+ 4 Nan", false, R.drawable.food7)
+            list1.add(item7)
+
+            val item1= QuickGrabItem("Veg Thali", "₹ 59", "4.3", "(79)", "Dal + 5 Roti + Salad", true, R.drawable.food1)
+            list1.add(item1)
+
+            val item6= QuickGrabItem("Dal Fry", "₹ 50", "4.1", "(76)", "Dal + 4 Roti + Salad", true, R.drawable.food6)
+            list1.add(item6)
+
+            val item2= QuickGrabItem("Non-Veg Thali", "₹ 95", "3.9", "(97)", "Gravy + 3 Nan + Salad", false, R.drawable.food2)
+            list1.add(item2)
+
+            val item3= QuickGrabItem("Chole Bhature", "₹ 50", "4.6", "(78)", "Chole + 2 Bhature + Pickel", true, R.drawable.food3)
+            list1.add(item3)
+
+            val item4= QuickGrabItem("Biryani", "₹ 89", "4.5", "(765)", "Biyani Bowl+ Salad", false, R.drawable.food4)
+            list1.add(item4)
+
+            val item5= QuickGrabItem("Dosa", "₹ 40", "4.7", "(755)", "Sambar + 1 Dosa + Chutney", true, R.drawable.food5)
+            list1.add(item5)
+
+            return list1
         }
     }
 }

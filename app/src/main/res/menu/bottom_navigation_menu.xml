@@ -14,10 +14,10 @@
         android:title="@string/my_meals" />
 
     <item
-        android:id="@+id/nearbyFragment"
+        android:id="@+id/quickGrabFragment"
         android:enabled="true"
-        android:icon="@drawable/nearby_icon"
-        android:title="@string/nearby" />
+        android:icon="@drawable/shopping_cart_icon"
+        android:title="@string/quick_grab" />
 
     <item
         android:id="@+id/profileFragment"

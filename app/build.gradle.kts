@@ -62,4 +62,7 @@ dependencies {
 
     // If you want to use in the APP itself besides testing
     implementation("com.github.blocoio:faker:2.0.1")
+
+    // swipe cardView
+    implementation("com.yuyakaido.android:card-stack-view:2.3.4")
 }
